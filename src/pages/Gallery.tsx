@@ -1,5 +1,6 @@
 import { useTranslation } from 'react-i18next'
 import { Acrostiche } from '@/components/acrostiche/Acrostiche'
+import { FloatingBubble } from '@/components/effects/FloatingBubble'
 import { memePhoto } from '@/data/photos'
 
 export default function GalleryPage() {
@@ -18,6 +19,8 @@ export default function GalleryPage() {
 
       <Acrostiche />
 
+      <FloatingBubble />
+
       <section className="flex flex-col items-center gap-6 px-4 py-16 text-center sm:gap-8 sm:px-6 md:py-24">
         <h2 className="font-display text-3xl font-semibold text-rose sm:text-4xl md:text-5xl lg:text-6xl">
           {t('gallery.kennedy.title')}
@@ -26,7 +29,7 @@ export default function GalleryPage() {
           src={memePhoto}
           alt=""
           loading="lazy"
-          className="max-w-xs rounded-2xl shadow-xl sm:max-w-sm md:max-w-md"
+          className="aspect-square w-64 rounded-full border-4 border-roseLight/40 object-cover shadow-2xl sm:w-72 md:w-80"
         />
         <p className="px-4 font-body text-sm text-mocha italic sm:text-base">
           {t('gallery.kennedy.joke')}
