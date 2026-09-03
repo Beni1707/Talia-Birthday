@@ -16,6 +16,14 @@
   --color-ink: #3d2929;
   --color-mocha: #7a5b5b;
   --color-gold: #c9a961;
+
+  --animate-marquee: marquee 55s linear infinite;
+}
+
+@keyframes marquee {
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 @theme inline {
@@ -73,10 +81,4 @@
   * {
     @apply border-border outline-ring/50;
   }
-}
-
-.photo-swiper {
-  --swiper-pagination-color: #c9a961;
-  --swiper-pagination-bullet-inactive-color: #c97b7b;
-  --swiper-pagination-bullet-inactive-opacity: 0.4;
 }
