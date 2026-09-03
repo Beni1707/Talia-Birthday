@@ -1,0 +1,41 @@
+{
+  "header": {
+    "brand": "Yikessss"
+  },
+  "home": {
+    "title": "Joyeux Anniversaire Talia !!",
+    "wishes": {
+      "intro": "Je suis pas très doué avec les mots et les longs souhaits, so j'ai laissé mes lignes de code parler...",
+      "body": "Bon anniversaire Talia, j'espère que tu passeras une excellente journée avec tes proches. Je ne regrette pas de t'avoir connue, tu as apporté beaucoup plus dans le camp d'été que ce pour quoi tu étais payée. Tu as apporté de la joie, la paix, la bonne humeur et bien plus encore. Profite de ta journée.",
+      "outro": "Et clique sur le bouton en bas pour voir ton petit petit cadeau."
+    },
+    "cta": "Découvre ton cadeau →"
+  },
+  "gallery": {
+    "title": "Un acrostiche pour toi",
+    "subtitle": "— une lettre, une pensée —",
+    "letters": {
+      "T": "Tout a commencé par une rencontre, sans savoir à quel point elle allait rendre notre été spécial.",
+      "A1": "Au fil des jours, ta joie, ton humour et ta gentillesse ont naturellement rapproché les gens autour de toi.",
+      "L": "Les jeunes ont trouvé en toi quelqu'un qui savait les écouter, les comprendre et toujours leur apporter un peu de lumière.",
+      "I": "Il y avait ta musique, tes rires, tes talents, ta sagesse, mais surtout cette belle façon que tu as d'être profondément humaine avec les autres.",
+      "A2": "Aujourd'hui, quand on repense à cet été, on ne se souvient pas seulement des activités ou des journées passées ensemble : on se souvient aussi de Talia, et de la belle différence que tu as faite dans nos vies."
+    },
+    "kennedy": {
+      "title": "Joyeux anniversaire Kennedy !",
+      "joke": "Je regrette toujours que ce ne soit pas toi sur la photo... 😂"
+    }
+  },
+  "footer": {
+    "copyright": "© Beni Kiwa Malonga —"
+  },
+  "acrostiche": {
+    "prev": "Lettre précédente",
+    "next": "Lettre suivante",
+    "goTo": "Aller à la lettre {{letter}}"
+  },
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  }
+}

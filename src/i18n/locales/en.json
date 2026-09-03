@@ -1,0 +1,41 @@
+{
+  "header": {
+    "brand": "Yikessss"
+  },
+  "home": {
+    "title": "Happy Birthday Talia !!",
+    "wishes": {
+      "intro": "Not great with words or long speeches, so I let my lines of code speak...",
+      "body": "Happy birthday Talia, I hope you'll spend an amazing day with your loved ones. I don't regret getting to know you — you brought so much more to camp than what you were paid for. You brought joy, peace, good vibes, and so much more. Enjoy your day.",
+      "outro": "And click the button below to see your little tiny gift."
+    },
+    "cta": "Discover your gift →"
+  },
+  "gallery": {
+    "title": "An acrostic for you",
+    "subtitle": "— one letter, one thought —",
+    "letters": {
+      "T": "Talia — the day we met, we had no idea how much it would shape our summer.",
+      "A1": "Along the way, your joy, humor and kindness naturally brought people together.",
+      "L": "Listening — the kids found in you someone who truly heard them and always brought a little light.",
+      "I": "In everything — your music, your laughter, your talents, your wisdom, but above all your deeply human way with others.",
+      "A2": "And today, thinking back on that summer, we don't just remember the activities or the days spent together: we remember Talia, and the difference you made in our lives."
+    },
+    "kennedy": {
+      "title": "Happy Birthday Kennedy !",
+      "joke": "I always regret that it's not you in the picture... 😂"
+    }
+  },
+  "footer": {
+    "copyright": "© Beni Kiwa Malonga —"
+  },
+  "acrostiche": {
+    "prev": "Previous letter",
+    "next": "Next letter",
+    "goTo": "Go to letter {{letter}}"
+  },
+  "language": {
+    "fr": "FR",
+    "en": "EN"
+  }
+}

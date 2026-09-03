@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;1,9..144,400&family=Inter:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Poppins:wght@300;400;500;600&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
 @theme {
-  --font-sans: 'Inter', sans-serif;
-  --font-serif: 'Fraunces', serif;
+  --font-display: 'Playfair Display', serif;
+  --font-body: 'Poppins', sans-serif;
 
   --color-beige: #f5ebdd;
   --color-beigeDark: #e8dac5;
@@ -16,14 +16,6 @@
   --color-ink: #3d2929;
   --color-mocha: #7a5b5b;
   --color-gold: #c9a961;
-
-  --animate-marquee: marquee 55s linear infinite;
-}
-
-@keyframes marquee {
-  to {
-    transform: translateX(-50%);
-  }
 }
 
 @theme inline {
@@ -75,10 +67,16 @@
   }
 
   body {
-    @apply bg-beige text-ink font-sans font-light;
+    @apply bg-beige text-ink font-body font-light;
   }
 
   * {
     @apply border-border outline-ring/50;
   }
+}
+
+.photo-swiper {
+  --swiper-pagination-color: #c9a961;
+  --swiper-pagination-bullet-inactive-color: #c97b7b;
+  --swiper-pagination-bullet-inactive-opacity: 0.4;
 }

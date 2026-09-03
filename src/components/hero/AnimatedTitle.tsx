@@ -11,7 +11,7 @@ export function AnimatedTitle({ text, className = '' }: AnimatedTitleProps) {
       initial={{ opacity: 0, y: 24 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
-      className={`font-serif text-5xl leading-tight font-light text-rose md:text-7xl lg:text-8xl ${className}`}
+      className={`font-display text-5xl leading-tight font-bold text-rose drop-shadow-sm md:text-6xl lg:text-7xl ${className}`}
     >
       {text}
     </motion.h1>
