@@ -5,8 +5,8 @@ export function Footer() {
   const year = new Date().getFullYear()
 
   return (
-    <footer className="bg-roseDark py-6">
-      <p className="text-center font-body text-sm text-cream">
+    <footer className="bg-roseDark px-4 py-4 md:py-6">
+      <p className="text-center font-body text-xs text-cream sm:text-sm">
         {t('footer.copyright')} {year}
       </p>
     </footer>

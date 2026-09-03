@@ -16,7 +16,7 @@ export function Hero() {
   }
 
   return (
-    <section className="mx-auto max-w-6xl px-6 py-16 md:px-12 md:py-24">
+    <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 md:px-12 md:py-24">
       <div className="grid gap-10 md:grid-cols-2 md:items-center md:gap-x-16 md:gap-y-12">
         <motion.img
           src={heroPhoto}
@@ -24,7 +24,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="order-1 aspect-square w-64 justify-self-center rounded-full border-4 border-rose/40 object-cover shadow-2xl ring-8 ring-roseLight/30 md:w-[400px] lg:w-[500px]"
+          className="order-1 aspect-square w-56 justify-self-center rounded-full border-4 border-rose/40 object-cover shadow-2xl ring-8 ring-roseLight/30 sm:w-64 md:w-80 lg:w-[400px] xl:w-[500px]"
         />
 
         <AnimatedTitle
@@ -39,7 +39,7 @@ export function Hero() {
           {t('home.cta')}
         </GiftButton>
 
-        <div className="order-4 max-w-lg space-y-4 text-left font-body text-base leading-relaxed text-ink md:order-3 md:text-lg">
+        <div className="order-4 max-w-sm space-y-4 px-4 text-left font-body text-sm leading-relaxed text-ink sm:max-w-md sm:text-base md:order-3 md:max-w-lg md:px-0 md:text-lg">
           <p>{t('home.wishes.intro')}</p>
           <p>{t('home.wishes.body')}</p>
           <p>{t('home.wishes.outro')}</p>

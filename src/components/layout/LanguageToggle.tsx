@@ -11,14 +11,14 @@ export function LanguageToggle() {
   }
 
   return (
-    <div className="flex items-center gap-1.5 font-body text-sm text-cream">
+    <div className="flex items-center gap-1.5 font-body text-sm text-cream md:text-base">
       <button
         type="button"
         onClick={() => setLanguage('fr')}
         aria-label="Français"
-        className={
+        className={`px-1.5 py-1.5 ${
           i18n.language === 'fr' ? 'font-semibold' : 'opacity-60 transition-opacity hover:opacity-100'
-        }
+        }`}
       >
         {t('language.fr')}
       </button>
@@ -29,9 +29,9 @@ export function LanguageToggle() {
         type="button"
         onClick={() => setLanguage('en')}
         aria-label="English"
-        className={
+        className={`px-1.5 py-1.5 ${
           i18n.language === 'en' ? 'font-semibold' : 'opacity-60 transition-opacity hover:opacity-100'
-        }
+        }`}
       >
         {t('language.en')}
       </button>

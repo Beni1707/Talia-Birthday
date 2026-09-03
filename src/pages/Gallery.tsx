@@ -18,17 +18,17 @@ export default function GalleryPage() {
 
       <Acrostiche />
 
-      <section className="flex flex-col items-center gap-8 px-6 py-16 text-center md:py-24">
-        <h2 className="font-display text-4xl font-semibold text-rose md:text-5xl">
+      <section className="flex flex-col items-center gap-6 px-4 py-16 text-center sm:gap-8 sm:px-6 md:py-24">
+        <h2 className="font-display text-3xl font-semibold text-rose sm:text-4xl md:text-5xl lg:text-6xl">
           {t('gallery.kennedy.title')}
         </h2>
         <img
           src={memePhoto}
           alt=""
           loading="lazy"
-          className="max-w-md rounded-2xl shadow-xl"
+          className="max-w-xs rounded-2xl shadow-xl sm:max-w-sm md:max-w-md"
         />
-        <p className="font-body text-base text-mocha italic">
+        <p className="px-4 font-body text-sm text-mocha italic sm:text-base">
           {t('gallery.kennedy.joke')}
         </p>
       </section>

@@ -17,7 +17,7 @@ export function GiftButton({ onClick, children, className }: GiftButtonProps) {
       transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
       whileHover={{ scale: 1.05 }}
       className={cn(
-        'block rounded-full bg-rose px-8 py-4 font-body text-lg font-medium text-cream shadow-xl transition-colors hover:bg-roseDark md:text-xl',
+        'flex min-h-[44px] items-center justify-center rounded-full bg-rose px-6 py-3 font-body text-base font-medium text-cream shadow-xl transition-colors hover:bg-roseDark sm:px-8 sm:py-4 sm:text-lg md:text-xl',
         className,
       )}
     >
