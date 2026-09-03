@@ -1,33 +1,25 @@
-import { useNavigate } from 'react-router-dom'
-import { Button } from '@/components/ui/button'
+import { motion } from 'framer-motion'
+import { heroPhoto } from '@/data/photos'
 import { AnimatedTitle } from './AnimatedTitle'
-import { ScrollIndicator } from './ScrollIndicator'
-
-const RECIPIENT_NAME = 'Prénom'
 
 export function Hero() {
-  const navigate = useNavigate()
-
   return (
-    <section className="relative flex min-h-screen flex-col items-center justify-center gap-8 px-6 text-center">
-      <div className="flex flex-col items-center gap-4">
-        <AnimatedTitle text={`Joyeux Anniversaire ${RECIPIENT_NAME}`} />
-        <p className="font-script text-2xl text-pearl md:text-3xl">
-          — un jour, mille souvenirs —
-        </p>
-      </div>
-
-      <Button
-        variant="outline"
-        size="lg"
-        className="mt-4 rounded-full border-ink/20 px-8 font-sans text-ink hover:bg-ink hover:text-ivory"
-        onClick={() => navigate('/gallery')}
+    <section className="mx-auto flex max-w-6xl flex-col items-center gap-10 px-6 py-16 md:flex-row md:gap-16 md:px-12 md:py-24">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.95 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.8, ease: 'easeOut' }}
+        className="w-full md:w-1/2"
       >
-        Découvrir
-      </Button>
+        <img
+          src={heroPhoto}
+          alt="Talia"
+          className="max-h-[70vh] w-full rounded-2xl object-cover shadow-2xl"
+        />
+      </motion.div>
 
-      <div className="absolute bottom-10">
-        <ScrollIndicator />
+      <div className="flex w-full flex-col items-center gap-4 text-center md:w-1/2 md:items-start md:text-left">
+        <AnimatedTitle text="JOYEUX ANNIVERSAIRE TALIA !!" />
       </div>
     </section>
   )

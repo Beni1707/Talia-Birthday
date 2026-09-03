@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion'
+
 interface AnimatedTitleProps {
   text: string
   className?: string
@@ -5,10 +7,13 @@ interface AnimatedTitleProps {
 
 export function AnimatedTitle({ text, className = '' }: AnimatedTitleProps) {
   return (
-    <h1
-      className={`animate-in fade-in font-serif text-5xl font-light tracking-tight text-ink duration-1000 md:text-7xl lg:text-8xl ${className}`}
+    <motion.h1
+      initial={{ opacity: 0, y: 24 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: 'easeOut' }}
+      className={`font-serif text-5xl leading-tight font-light text-rose md:text-7xl lg:text-8xl ${className}`}
     >
       {text}
-    </h1>
+    </motion.h1>
   )
 }
